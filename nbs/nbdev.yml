@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "tipping-point-uk-charity-bankers"
+  site-url: "https://Autonomy-Data-Unit.github.io/tipping-point-uk-charity-bankers"
+  description: "Tool for extracting the list of bankers a given UK charity banks with, from the Charity Commission and OSCR databases."
+  repo-branch: main
+  repo-url: "https://github.com/Autonomy-Data-Unit/tipping-point-uk-charity-bankers"

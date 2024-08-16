@@ -1,7 +1,22 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[tool.poetry]
+name = "tipping-point-uk-charity-bankers"
+version = "0.1.0"
+description = "Tool for extracting the list of bankers a given UK charity banks with, from the Charity Commission and OSCR databases."
+authors = ["Lukas Kikuchi <lukas.kikuchi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+nbdev = "^2.3.27"
+jupyter = "^1.0.0"
 
 [tool.dagster]
 module_name = "tipping_point_uk_charity_bankers.definitions"
 code_location_name = "tipping_point_uk_charity_bankers"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
